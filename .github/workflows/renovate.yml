@@ -21,6 +21,12 @@ jobs:
           repositories: |
             .github
             cli
+            docs
+            workload-images
+            sample-dotfiles
+            piv-go
+            libudev
+            skey
 
       - name: Checkout
         uses: actions/checkout@v5.0.0
@@ -34,5 +40,4 @@ jobs:
           LOG_LEVEL: debug
           RENOVATE_USERNAME: qubesome-renovate[bot]
           RENOVATE_ONBOARDING: 'false'
-          RENOVATE_REPOSITORIES: qubesome/.github,qubesome/cli
-          RENOVATE_CONFIG_FILE: https://raw.githubusercontent.com/qubesome/.github/main/renovate-config.json
+          RENOVATE_REPOSITORIES: qubesome/.github,qubesome/cli,qubesome/docs,qubesome/workload-images,qubesome/sample-dotfiles,qubesome/piv-go,qubesome/libudev,qubesome/skey
