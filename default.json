@@ -1,0 +1,39 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "config:base",
+        ":semanticCommits",
+        ":rebaseStalePrs",
+        ":configMigration",
+        ":automergeDisabled",
+        "group:allNonMajor",
+        "mergeConfidence:age-confidence-badges",
+        "helpers:pinGitHubActionDigests"
+    ],
+    "baseBranchPatterns": [
+        "main"
+    ],
+    "labels": [
+        "build:deps"
+    ],
+    "minimumReleaseAge": "7 days",
+    "prConcurrentLimit": 3,
+    "constraints": {
+        "go": "<1.26"
+    },
+    "postUpdateOptions": [
+        "gomodTidy",
+        "gomodUpdateImportPaths"
+    ],
+    "packageRules": [
+        {
+            "matchManagers": [
+                "github-actions"
+            ],
+            "groupName": "Monthly GitHub Actions updates",
+            "schedule": [
+                "* 5-8 * * 1"
+            ]
+        }
+    ]
+}
