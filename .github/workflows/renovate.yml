@@ -33,3 +33,4 @@ jobs:
           LOG_LEVEL: 'debug'
           RENOVATE_REPOSITORIES: ${{ github.repository }}
           RENOVATE_USERNAME: "qubesome-renovate[bot]"
+          RENOVATE_ONBOARDING: "false"
