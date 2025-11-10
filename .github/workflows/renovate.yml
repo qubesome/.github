@@ -34,7 +34,7 @@ jobs:
       - name: Self-hosted Renovate
         uses: renovatebot/github-action@v44.0.1
         with:
-          configurationFile: .renovaterc.json5
+          configurationFile: default.json
           token: '${{ steps.get_token.outputs.token }}'
         env:
           LOG_LEVEL: debug
