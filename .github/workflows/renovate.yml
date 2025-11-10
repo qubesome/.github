@@ -31,3 +31,5 @@ jobs:
           token: '${{ steps.get_token.outputs.token }}'
         env:
           LOG_LEVEL: 'debug'
+          RENOVATE_REPOSITORIES: ${{ github.repository }}
+          RENOVATE_USERNAME: "qubesome-renovate[bot]"
