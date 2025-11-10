@@ -33,6 +33,6 @@ jobs:
         env:
           LOG_LEVEL: debug
           RENOVATE_USERNAME: qubesome-renovate[bot]
-          RENOVATE_ONBOARDING: 'false
+          RENOVATE_ONBOARDING: 'false'
           RENOVATE_REPOSITORIES: qubesome/.github,qubesome/cli
           RENOVATE_CONFIG_FILE: https://raw.githubusercontent.com/qubesome/.github/main/renovate-config.json
