@@ -25,6 +25,18 @@
         "gomodTidy",
         "gomodUpdateImportPaths"
     ],
+    "customManagers": [
+        {
+            "customType": "regex",
+            "managerFilePatterns": [
+                "/Makefile/",
+                "/hack/base.mk/"
+            ],
+            "matchStrings": [
+                "# renovate: datasource=(?<datasource>.*?) depName=(?<depName>.*?)?( extractVersion=(?<extractVersion>.*?))?\\s+.+_(VERSION).*=(\\s|\"|)(?<currentValue>.*)(\"|)"
+            ]
+        }
+    ],
     "packageRules": [
         {
             "matchManagers": [
