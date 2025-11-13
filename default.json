@@ -6,7 +6,6 @@
         ":rebaseStalePrs",
         ":configMigration",
         ":automergeDisabled",
-        "group:allNonMajor",
         "mergeConfidence:age-confidence-badges",
         "helpers:pinGitHubActionDigests"
     ],
@@ -17,7 +16,7 @@
         "build:deps"
     ],
     "minimumReleaseAge": "7 days",
-    "prConcurrentLimit": 3,
+    "prConcurrentLimit": 5,
     "constraints": {
         "go": "<1.26"
     },
