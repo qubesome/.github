@@ -29,7 +29,8 @@
             "customType": "regex",
             "managerFilePatterns": [
                 "/Makefile/",
-                "/hack/base.mk/"
+                "/hack/base.mk/",
+                "**/Dockerfile"
             ],
             "matchStrings": [
                 "# renovate: datasource=(?<datasource>.*?) depName=(?<depName>.*?)?( extractVersion=(?<extractVersion>.*?))?\\s+.+_(VERSION).*=(\\s|\"|)(?<currentValue>.*)(\"|)"
