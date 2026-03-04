@@ -60,6 +60,12 @@
             "minimumReleaseAge": "0"
         },
         {
+            "matchDepNames": [
+                "entireio/cli"
+            ],
+            "minimumReleaseAge": "0"
+        },
+        {
             "groupName": "go-git",
             "matchManagers": [
                 "gomod"
