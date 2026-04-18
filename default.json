@@ -39,13 +39,20 @@
     ],
     "packageRules": [
         {
+            "matchDepNames": [
+                "jdx/mise"
+            ],
+            "minimumReleaseAge": "90 days"
+        },
+        {
             "matchManagers": [
                 "github-actions"
             ],
             "groupName": "github-actions",
             "schedule": [
                 "* 5-8 * * 1"
-            ]
+            ],
+            "minimumReleaseAge": "90 days"
         },
         {
             "groupName": "golang",
